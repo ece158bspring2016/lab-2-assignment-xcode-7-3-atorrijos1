@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="0xf-e9-sPR">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--Gestures-->
+        <scene sceneID="53G-Pv-MmG">
+            <objects>
+                <viewController id="jL6-Bi-n3T" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="1B7-D2-TiK"/>
+                        <viewControllerLayoutGuide type="bottom" id="Ha2-dc-YKB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="AT8-hM-zaU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Gestures" id="atp-d0-7Oq"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7fX-mq-pbk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026.5" y="720.5"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="6hz-jC-5Bc">
+            <objects>
+                <tabBarController id="0xf-e9-sPR" sceneMemberID="viewController">
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="hO4-FT-7qt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="vRe-gu-oYE" kind="relationship" relationship="viewControllers" id="JZb-ME-ENg"/>
+                        <segue destination="jL6-Bi-n3T" kind="relationship" relationship="viewControllers" id="6dO-QV-AjG"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KG1-h0-hjW" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="207" y="297"/>
+        </scene>
+        <!--Players-->
+        <scene sceneID="nct-4Q-EJX">
+            <objects>
+                <tableViewController id="1gB-RS-N3c" customClass="PlayersViewController" customModule="Storyboard2" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="60" sectionHeaderHeight="28" sectionFooterHeight="28" id="678-VH-hgG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" reuseIdentifier="PlayerCell" rowHeight="60" id="6cL-ja-A2G" customClass="PlayerCell" customModule="Storyboard2" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="92" width="375" height="60"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="6cL-ja-A2G" id="nch-Ul-l5q">
+                                    <rect key="frame" x="0.0" y="0.0" width="342" height="59"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <stackView opaque="NO" contentMode="scaleToFill" distribution="equalSpacing" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="oMh-0w-fEB">
+                                            <rect key="frame" x="28" y="9" width="126" height="50"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="lTm-Ng-ELm">
+                                                    <rect key="frame" x="0.0" y="4" width="46" height="42"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="100" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2A1-YS-h6t">
+                                                            <rect key="frame" x="0.0" y="0.0" width="46" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" tag="101" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Game" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Vjx-wS-EGa">
+                                                            <rect key="frame" x="0.0" y="21" width="46" height="21"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                                <imageView userInteractionEnabled="NO" tag="102" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="wSz-In-ef4">
+                                                    <rect key="frame" x="46" y="0.0" width="80" height="50"/>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="126" id="C0y-Kx-AkW"/>
+                                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="46" id="F2N-cj-yTj"/>
+                                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="289" id="ZQA-EQ-das"/>
+                                                <constraint firstItem="wSz-In-ef4" firstAttribute="leading" secondItem="lTm-Ng-ELm" secondAttribute="trailing" id="bwM-a0-Za7"/>
+                                                <constraint firstAttribute="height" constant="50" id="izO-iq-NCG"/>
+                                                <constraint firstItem="wSz-In-ef4" firstAttribute="top" secondItem="oMh-0w-fEB" secondAttribute="top" id="okf-tc-Sie"/>
+                                            </constraints>
+                                        </stackView>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="trailingMargin" secondItem="oMh-0w-fEB" secondAttribute="trailing" constant="20" id="16t-8t-k8h"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="oMh-0w-fEB" secondAttribute="trailing" constant="20" id="Csl-KN-BiU"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="oMh-0w-fEB" secondAttribute="trailing" constant="20" id="Duz-gk-mXm"/>
+                                        <constraint firstItem="oMh-0w-fEB" firstAttribute="leading" secondItem="nch-Ul-l5q" secondAttribute="leadingMargin" constant="20" id="MWf-PG-ecp"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="oMh-0w-fEB" secondAttribute="bottom" id="RPg-uc-ZH3"/>
+                                        <constraint firstItem="oMh-0w-fEB" firstAttribute="top" secondItem="nch-Ul-l5q" secondAttribute="topMargin" id="ceG-Vr-I0d"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="oMh-0w-fEB" secondAttribute="bottom" id="cnh-Fe-yiq"/>
+                                        <constraint firstItem="oMh-0w-fEB" firstAttribute="leading" secondItem="nch-Ul-l5q" secondAttribute="leadingMargin" constant="20" id="hhA-nV-F2f"/>
+                                        <constraint firstItem="oMh-0w-fEB" firstAttribute="top" secondItem="nch-Ul-l5q" secondAttribute="topMargin" id="oBa-kb-Ut5"/>
+                                        <constraint firstItem="oMh-0w-fEB" firstAttribute="leading" secondItem="nch-Ul-l5q" secondAttribute="leadingMargin" constant="20" id="tMm-VO-Xxy"/>
+                                        <constraint firstAttribute="bottomMargin" secondItem="oMh-0w-fEB" secondAttribute="bottom" id="xNC-la-Hi9"/>
+                                        <constraint firstItem="oMh-0w-fEB" firstAttribute="top" secondItem="nch-Ul-l5q" secondAttribute="topMargin" id="yXd-E8-AzV"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="gameLabel" destination="Vjx-wS-EGa" id="A8a-ck-bcV"/>
+                                    <outlet property="nameLabel" destination="2A1-YS-h6t" id="ykW-TZ-QFL"/>
+                                    <outlet property="ratingImageView" destination="wSz-In-ef4" id="WnD-rf-SYz"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="1gB-RS-N3c" id="qHe-wY-uyq"/>
+                            <outlet property="delegate" destination="1gB-RS-N3c" id="WnA-LZ-HHT"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Players" id="dvR-ti-eOk"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZEg-Nq-Aih" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1838" y="-148"/>
+        </scene>
+        <!--Players-->
+        <scene sceneID="6aP-z9-sYg">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="vRe-gu-oYE" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Players" id="nBd-84-oiP"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="jjC-x9-PMg">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="1gB-RS-N3c" kind="relationship" relationship="rootViewController" id="3iO-Uo-TfW"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="za8-gZ-vIb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="-148"/>
+        </scene>
+    </scenes>
+</document>
