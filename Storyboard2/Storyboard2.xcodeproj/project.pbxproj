@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A1D2D8F11CDEDD1F005224AC /* GamePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D2D8F01CDEDD1F005224AC /* GamePickerViewController.swift */; };
 		A1E879131CCAE491001057F4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E879121CCAE491001057F4 /* AppDelegate.swift */; };
 		A1E879151CCAE491001057F4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E879141CCAE491001057F4 /* ViewController.swift */; };
 		A1E879181CCAE491001057F4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1E879161CCAE491001057F4 /* Main.storyboard */; };
@@ -16,9 +17,11 @@
 		A1E879271CCAF120001057F4 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E879261CCAF120001057F4 /* Player.swift */; };
 		A1E879291CCAF1A0001057F4 /* SampleData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E879281CCAF1A0001057F4 /* SampleData.swift */; };
 		A1E8792B1CCAFAD2001057F4 /* PlayerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1E8792A1CCAFAD2001057F4 /* PlayerCell.swift */; };
+		A1EBEE601CD98EB100410B76 /* PlayerDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1EBEE5F1CD98EB100410B76 /* PlayerDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A1D2D8F01CDEDD1F005224AC /* GamePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GamePickerViewController.swift; sourceTree = "<group>"; };
 		A1E8790F1CCAE491001057F4 /* Storyboard2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Storyboard2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1E879121CCAE491001057F4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1E879141CCAE491001057F4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -30,6 +33,7 @@
 		A1E879261CCAF120001057F4 /* Player.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		A1E879281CCAF1A0001057F4 /* SampleData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SampleData.swift; sourceTree = "<group>"; };
 		A1E8792A1CCAFAD2001057F4 /* PlayerCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerCell.swift; sourceTree = "<group>"; };
+		A1EBEE5F1CD98EB100410B76 /* PlayerDetailsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlayerDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +70,8 @@
 				A1E879141CCAE491001057F4 /* ViewController.swift */,
 				A1E879241CCAF032001057F4 /* PlayersViewController.swift */,
 				A1E879161CCAE491001057F4 /* Main.storyboard */,
+				A1D2D8F01CDEDD1F005224AC /* GamePickerViewController.swift */,
+				A1EBEE5F1CD98EB100410B76 /* PlayerDetailsViewController.swift */,
 				A1E8792A1CCAFAD2001057F4 /* PlayerCell.swift */,
 				A1E879261CCAF120001057F4 /* Player.swift */,
 				A1E879281CCAF1A0001057F4 /* SampleData.swift */,
@@ -147,9 +153,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A1D2D8F11CDEDD1F005224AC /* GamePickerViewController.swift in Sources */,
 				A1E879271CCAF120001057F4 /* Player.swift in Sources */,
 				A1E879151CCAE491001057F4 /* ViewController.swift in Sources */,
 				A1E8792B1CCAFAD2001057F4 /* PlayerCell.swift in Sources */,
+				A1EBEE601CD98EB100410B76 /* PlayerDetailsViewController.swift in Sources */,
 				A1E879131CCAE491001057F4 /* AppDelegate.swift in Sources */,
 				A1E879291CCAF1A0001057F4 /* SampleData.swift in Sources */,
 				A1E879251CCAF032001057F4 /* PlayersViewController.swift in Sources */,
@@ -302,6 +310,7 @@
 				A1E879231CCAE492001057F4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
